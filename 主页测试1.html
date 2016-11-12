@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试12栅格</title>
+    <link rel="stylesheet" href="css/less.css">
+    <script src="http://yanlinzp1.duapp.com/js/jquery.js"></script>
+    <style>
+        body,img{
+            margin: 0;padding: 0;
+        }
+        body{
+            background:#f0f5f8;
+        }
+        *{
+            text-align: center;
+            font-family: "microsoft yahei", "微软雅黑";
+        }
+        div[class*=col]{
+            height: 200px;border: 1px solid #000;background-size: 100% 100%;background-repeat: no-repeat;background-position: center;
+        }
+        .zhengzhan{
+              width: 100%;height:auto;margin: auto;overflow: hidden;
+        }
+        .web{
+            width: 100%;height:auto;margin: auto;overflow: hidden;
+        }
+        .web .container div[class*=col-l-9]{
+            background-image: url("http://yanlinzp1.duapp.com/mycms/upload/qxjd-index01.png");
+        }
+        .web .container div[class*=col-m-9]{
+            background-image: url("http://yanlinzp1.duapp.com/mycms/upload/qxjd-index01.png");
+        }
+        .web .container div[class*=col-s-12]:first-child{
+            background-image: url("http://yanlinzp1.duapp.com/mycms/upload/qxjd-index01 - 1.png");
+        }
+        .game{
+            width: 100%;height:auto;margin: auto;overflow: hidden;
+        }
+        /*-------*/
+        .shu{
+            width: 100px;height: 300px;position: absolute;cursor: pointer;
+            font-size: 60px;text-align: center;
+        }
+        .x1{
+            top: 30%;left: 15%;
+        }
+        .x2{
+            top: 30%;left: 45%;
+        }
+        .x3{
+            top: 30%;left: 75%;
+        }
+        .left{
+            width: 0;height: 100%;border-right: 10px solid #666;float: left;border-radius: 15px;
+        }
+        .right{
+            width: 0;height: 100%;border-left: 10px solid #666;float: left;border-radius: 15px;
+        }
+        .center{
+            width: 80px;height: 290px;margin-top: 5px;float: left;background: #e6e6e6;
+        }
+        .black{
+            width: 200px;height: 80px;margin:auto;margin-top:30px;font-size: 20px;line-height: 70px;text-align: center;
+            border: 5px solid #333;border-radius: 20px;cursor: pointer;display: none;
+        }
+    </style>
+</head>
+<body>
+<nav><h1>欢迎您的到来</h1></nav>
+<div class="zhengzhan" style="display: none">
+    <div class="container">
+        <div class="row">
+            <div class="col-s-12 col-m-3 col-l-2">整站</div>
+            <div class="col-s-12 col-m-3 col-l-2">2</div>
+            <div class="col-s-12 col-m-3 col-l-2">3</div>
+            <div class="col-s-12 col-m-3 col-l-2">4</div>
+            <div class="col-s-12 col-m-12 col-l-2">5</div>
+            <div class="col-s-12 col-m-12 col-l-2">6</div>
+        </div>
+    </div>
+</div>
+<div class="web" style="display: none">
+    <div class="container">
+        <div class="row">
+            <div class="col-s-12 col-m-9 col-l-9" style="height: 400px"></div>
+            <div class="col-s-3 col-m-3 col-l-hide">2</div>
+            <div class="col-s-9 col-m-hide col-l-3">3</div>
+            <div class="col-s-9 col-m-3 col-l-hide">4</div>
+            <div class="col-s-3 col-m-12 col-l-3">5</div>
+            <div class="col-s-12 col-m-12 col-l-12">6</div>
+        </div>
+    </div>
+</div>
+<div class="game" style="display: none">
+    <div class="container">
+        <div class="row">
+            <div class="col-s-12 col-m-3 col-l-2">游戏</div>
+            <div class="col-s-12 col-m-3 col-l-2">2</div>
+            <div class="col-s-12 col-m-3 col-l-2">3</div>
+            <div class="col-s-12 col-m-3 col-l-2">4</div>
+            <div class="col-s-12 col-m-12 col-l-2">5</div>
+            <div class="col-s-12 col-m-12 col-l-2">6</div>
+        </div>
+    </div>
+</div>
+<div class="black">返回目录</div>
+<div class="shu x1">
+    <div class="left"></div>
+    <div class="center">整站类</div>
+    <div class="right"></div>
+</div>
+<div class="shu x2">
+    <div class="left"></div>
+    <div class="center">单页面</div>
+    <div class="right"></div>
+</div>
+<div class="shu x3">
+    <div class="left"></div>
+    <div class="center">游戏类</div>
+    <div class="right"></div>
+</div>
+<!--<h1>关于我</h1>-->
+<!--<p>NAME&ndash;&gt;张彦林;</p><p>AGE&ndash;&gt;25;</p><p>MOTTO&ndash;&gt;一个人就是一本书，每本书都渴望被阅读。</p>-->
+<!--<p>QQ&ndash;&gt;137648904</p><p>LOVE&ndash;&gt;一个人静静的喝一杯叫‘无忧无虑’的茶</p><p>E-mail&ndash;&gt;137648904@qq.com</p>-->
+<!--<p>ABILITY&ndash;&gt;熟悉HTML5 ，CSS3 , NodeJs , Jquery 等技能 ，了解MYSQL , PHP , PHPCMS等相关知识。</p><p style="font-weight: bold">联系方式：18335198709</p>-->
+<!--<p>谢谢鉴赏</p>-->
+</body>
+<script>
+    $(".x1").click(function () {
+        $(".shu").hide()
+        $(".zhengzhan").show()
+        $(".black").show()
+    })
+    $(".x2").click(function () {
+        $(".shu").hide()
+        $(".web").show()
+        $(".black").show()
+    })
+    $(".x3").click(function () {
+        $(".shu").hide()
+        $(".game").show()
+        $(".black").show()
+    })
+    $(".black").click(function () {
+        $(".shu").show()
+        $(".game").hide()
+        $(".web").hide()
+        $(".zhengzhan").hide()
+        $(".black").hide()
+    })
+</script>
+</html>

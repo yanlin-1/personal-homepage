@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框及阴影</title>
+    <link rel="stylesheet" href="css/less1.css">
+    <style>
+        .zuopin{
+            width: 150px;height: 150px;border-radius: 50%;box-shadow: 0 0 5px red inset;
+            margin-top:20%;margin-left:5%;float: left;
+        }
+        .tuce{
+            width: 200px;height: 200px;border-radius: 50%;box-shadow: 0 0 5px blue inset;
+            margin-top:10%;margin-left:20%;float: left;
+        }
+        .guanyuwo{
+            width: 150px;height: 150px;border-radius: 50%;box-shadow: 0 0 15px yellow inset;
+            margin-top:20%;margin-left:20%;float: left;
+        }
+        header{
+            width: 100%;height: 44px;line-height: 44px;background: #444;color: #f0f5f8;
+            margin: auto;
+        }
+        header div:first-child{
+            float: left;padding-left:5%;
+        }
+        header div:last-child{
+            float: right;padding-right:5%;
+        }
+        .daohang{
+            width: 100%;height: 8px;border: 1px solid #666;position: fixed;bottom: 5px;left: 0;
+        }
+        .dong{
+            width: 0;height: 6px;background: #E5004F;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="xx"></div>
+<div class="zuopin"></div>
+<div class="tuce"></div>
+<div class="guanyuwo"></div>
+<header>
+    <div>欢迎访问XX的个人主页</div>
+    <div>--祝愿您每天都有一个好心情</div>
+</header>
+<div class="daohang">
+    <div class="dong"></div>
+</div>
+
+</body>
+<script>
+    $(".jianli span").click(function () {
+        $(".geren").show()
+        $(this).hide()
+    })
+    $(".geren").click(function () {
+        $(this).hide()
+        $(".jianli span").show()
+    })
+    var cw=$(window).width()
+    var num=200;
+    var xx=0;
+    //    setInterval(function () {
+    //        xx++
+    //        $(".dong").css("width",(xx*num)+"px")
+    //        if((xx*num)>(cw+num)){
+    //            alert("作品展示完毕")
+    //        }
+    //    },800)
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试画布</title>
+    <style>
+        div{
+            width: 200px;height: 300px;
+            line-height: 100px;font-size: 36px;
+            margin: auto;text-align: center;
+        }
+        div:nth-child(1){
+            border:10px solid #00aa00;
+            display: block;
+        }
+        div:nth-child(2){
+            display: none;
+        }
+        @media screen and (min-width: 600px){
+            div:nth-child(1){
+                display: none;
+            }
+            div:nth-child(2){
+                display: block;
+                border: 10px solid #1DA1F2;
+            }
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var canvas=document.getElementsByTagName("canvas")[0]
+            var cobj=canvas.getContext("2d");
+            var cobx=canvas.getContext("2d");
+            cobj.fillStyle="#666";
+            cobj.fillRect(0,0,150,75)
+            cobx.arc(100,100,50,0,2*Math.PI)
+            cobx.stroke();
+        }
+
+    </script>
+</head>
+<body>
+<!--响应式 为了适应不同终端诞生的技术
+           为了让相同的页面在不同的终端上显示出相应的状态-->
+<!--<div class="da">找到我啦！<br>你真聪明</div>-->
+<!--<div class="da">傻子！！<br>猜猜我在哪</div>-->
+<canvas></canvas>
+</body>
+</html>

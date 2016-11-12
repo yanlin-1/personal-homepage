@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试3D</title>
+    <style>
+        .qx{
+            width: 160px;height: 120px;background: #00aa00;margin-top: 50px;margin-left: 50px;border-radius: 30%;
+            border-left: 8px solid #000;font-size: 60px;color: red;font-weight: 600;text-align: center;line-height: 120px;
+            transition: opactiy 1s linear;opacity: 0;position: absolute;transform:rotate3d(0,1,1,75deg);cursor: pointer;
+        }
+        .qx:nth-child(1):hover+.qx:nth-child(2){
+            opacity: 1;
+        }
+        .qx:nth-child(2):hover+.qx:nth-child(3){
+            opacity: 1;
+        }
+        .qx:nth-child(3):hover+.qx:nth-child(4){
+            opacity: 1;
+        }
+        .qx:nth-child(4):hover+.qx:nth-child(5){
+            opacity: 1;
+        }
+        .qx:nth-child(5):hover+.qx:nth-child(6){
+            opacity: 1;
+        }
+        .qx:nth-child(6):hover+.qx:nth-child(7){
+            opacity: 1;
+        }
+        .qx:nth-child(7):hover+.qx:nth-child(8){
+            opacity: 1;
+        }
+        .zc{
+            width: 160px;height: 120px;background: #00aa00;margin-top: 50px;margin-left: 50px;border-radius: 30%;
+            border-left: 8px solid #000;font-size: 60px;color: red;font-weight: 600;text-align: center;line-height: 120px;
+            /*transform:rotate(45deg);*/transform:rotate3d(1,1,0,45deg);position: absolute;opacity: 0.6;cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+找宝藏啦！！
+<div class="qx">--></div>
+<div class="qx" style="left: 420px">--></div>
+<div class="qx" style="left: 760px">--></div>
+<div class="qx" style="left: 1130px;top: 420px">v</div>
+<div class="qx" style="left: 760px;top: 420px"><--</div>
+<div class="qx" style="left: 420px;top: 420px"><--</div>
+<div class="qx" style="top: 420px">^--^</div>
+<div class="qx" style="font-size: 20px">宝藏在此</div>
+<div class="zc">--></div>
+</body>
+<script>
+    var box1=document.getElementsByTagName("div")[0];
+    var box2=document.getElementsByTagName("div")[8];
+    box2.onclick=function () {
+            box1.style.display = "block";
+            box2.style.display = "none";
+        }
+</script>
+</html>

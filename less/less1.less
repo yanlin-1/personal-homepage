@@ -1,0 +1,46 @@
+.radius(@r1:20%,@r2:50%,@r3:30%,@r4:50%){
+ -webkit-border-radius:@r1 @r2 @r3 @r4;
+ -o-border-radius:@arguments;
+ -moz-border-radius:@arguments;
+ -ms-border-radius:@arguments;
+ border-radius:@arguments;
+}
+.shadow(@type) when (@type=1){
+  -webkit-box-shadow:0 0 10px red inset;
+  -o-box-shadow:0 0 10px red inset;
+  -moz-box-shadow:0 0 10px red inset;
+  -ms-box-shadow:0 0 10px red inset;
+  box-shadow:0 0 10px red inset;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+   padding: 50px;padding-left: 80px;
+}
+div{
+  width: 200px;
+  height: 200px;border: 1px solid #00a2e8;
+  .radius();
+  margin: auto;
+  background: #f19000;
+  float: left;
+  margin-right: 20px;
+}
+div:nth-child(1),div:nth-child(2){
+  clear: both;background: #fff;
+  .shadow(1)
+}
+div:last-child{
+  clear: both;
+  position: absolute;top: 60px;right: 160px;
+}
+.xx{
+  width: 200px;height: 200px;
+  border:2px solid red ;
+  border-image-source: url(../xx.jpg);
+  border-image-width: 50px;
+  border-image-slice: 33.333%;
+  border-image-repeat: round;
+  border-image-outset: 50px;
+}
