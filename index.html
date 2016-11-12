@@ -8,22 +8,26 @@
     <script src="js/jquery.js"></script>
     <script src="js/index.js"></script>
     <style>
-       .con{width: 100%;height: 600px;background: url("counter-bg.jpg");background-size: 100% 100%;background-repeat: no-repeat;  position: relative;}
-        .main_kj{width:52px;height: 52px;position: absolute;top: 5%;right:5%;border: 2px solid #fff;background-image: url("main.png");background-repeat: no-repeat;background-size: 100% 100%;  }
-        .my{width: 100%;height:380px;background: rgba(0,0,0,0.6);position: absolute;top: 30%;left: 0;padding:0 20%;  }
-        .zhaopian{width: 300px;height: 300px;position: relative;top: -10px;background-image: url("user.png");background-size: 100% 100%;background-repeat: no-repeat}
-         .introduce{width: 50%;height: 100%;padding: 20px;position: absolute;top:0;left: 50%;z-index: 10}
-         .introduce p:nth-child(1){width: 70%;font-size: 24px;color: #fff}
-       .introduce p:nth-child(1) span{font-size: 36px;color: #fff;margin-left: 10px;box-shadow: 0 0 30px #E08A06 inset;padding: 5px}
-       .introduce p:nth-child(2){width: 70%;font-size: 17px;color: #fff;font-weight: 500}
-       .introduce p:nth-child(2) span{font-size: 24px;color: #68B42F;}
-        .anniu{width: 100%;height: 40px;margin-top: 20px}
-        .anniu_f{height: 40px;padding: 8px;font-size: 16px;line-height: 15px;text-align: center;float: left;color: #fff;margin-right: 10px;cursor: pointer}
-        .anniu_f:nth-child(1){width: 100px;border: 5px solid #ff9e2b;background-color: transparent;transition: all 0.5s linear 0s;}
-       .anniu_f:nth-child(1):hover{transition: all 0.5s linear 0s;}
-       .anniu_f:nth-child(2){width: 130px;border: 5px solid #00C249}
-       .anniu_y{width: 60px;height: 60px;border-radius: 50%;box-shadow: 0 0 5px plum inset;float: left;position: relative;top: -10px}
-
+        .experience{display: block;margin: auto;padding: 50px 49px 30px;background-image: url(16.png);background-size: 100% 100%;background-repeat: no-repeat}
+        .luobotu{padding: 40px 0 0;}
+        .experience h3{color: #fff}
+        .luobo{margin-left: 8.33%;padding:5% 5%;background: #f9f9f9;height: 400px}
+        .luobo img{width: 100%;}
+        .exper_show{padding: 20px}
+        .exper_show h3{font-size: 24px;color: #000;text-indent: 1em;font-weight: 500}
+        .exper_show span{font-size: 12px;color: #000;padding-left: 30px;font-weight: 500}
+        .exper_show ul{padding-left: 30px;color: #E08A06}
+        .exper_show ul li{margin-top: 20px;list-style: disc;}
+        .xmjy{display: block;margin: auto;background-image: url(bg-s.png);background-size: 100% 100%;background-repeat: no-repeat;}
+        .xmjy_bg{width:100%;height:100%;background: rgba(0,0,0,0.6);padding: 50px 49px 30px;}
+        .xmjy_tu{padding: 20px 0 20px}
+        .xmjy_tu div[class*=col-l-4]{height: 285px;border: 1px solid #666;overflow: hidden;position: relative}
+        .xmjy_tu .xmlb{margin-bottom: 20px}
+        .xmjy_tu .xmlb .list{border: 2px solid #fff;width: 120px;height: 50px;line-height:50px;margin: auto;text-align: center;font-size: 24px;color: #fff}
+        .xmjy_tu img{width: 100%;height: 100%;transition: transform 2s ease}
+        .mc{position: absolute;top: -60px;left: 45%;color: #00a2e8;z-index: 20}
+        .l_j{position: absolute;bottom: -60px;left: 45%;border: 1px solid #e6e6e6;padding: 5px;border-radius: 50%;font-size: 36px;z-index: 20}
+        .xmjy_tu img:hover{transform: scale(1.5,1.5);}
     </style>
 </head>
 <body>
@@ -67,5 +71,101 @@
         </div>
     </div>
 </div>
+<div class="zyjn">
+    <div class="container">
+        <div class="row">
+            <div class="col-l-12 zyjn_title"> <h3>专业技能</h3></div>
+            <div class="col-l-12 zyjn_border">
+                <div class="zy_border"></div>
+            </div>
+            <div class="col-l-12 zyjn_con">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-l-8 col-s-12 zwjn">
+                            <div>熟练使用HTML,CSS+DIV网站重构、优化；掌握HTML5和CSS3的新特性并应用开发。</div>
+                            <div>熟练使用firebug,Chrome调试工作调试代码，并进一步优化。</div>
+                            <div>熟练使用javascript、Ajax、jQuery、zepto等web开发技术，并可以制作页面的基本动画动态效果及简单的动画。</div>
+                            <div>熟练使用百度地图API接口使用。</div>
+                            <div>熟练使用bootstrap快速布局页面。</div>
+                            <div>熟练掌握Axure、Photoshop、Sublime、Hbuilder等软件的使用，提高开发效率。</div>
+                            <div>掌握angularjs、nodejs等。</div>
+                            <div>掌握微信开发、JS-SDK。</div>
+                            <div>掌握APP打包：cordova线下打包和Hbuider线上打包。</div>
+                            <div>了解less、sess等css预处理语言。</div>
+                            <div>了解PHP、PHPCMS、MySQL等。</div>
+                        </div>
+                        <div class="col-l-4 col-s-12 my_zy">
+                            <img src="11.png.png" alt="图片处理有误">
+                            <p>个人主页：<a href="http://www.yanlinzp1.duapp.com">http://www.yanlinzp1.duapp.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-l-12 col-s-12 col-m-12 zyjn_title"><h3>工作经验</h3></div>
+            <div class="col-l-12 col-s-12 col-m-12 zyjn_border">
+                <div class="zy_border"></div>
+            </div>
+            <div class="col-l-12 col-s-12 col-m-10 luobotu">
+                <div class="luobo">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-l-6 col-s-6 col-m-12 "><img src="body.jpg" alt="图片处理有误"><!--可以插小图--></div>
+                            <div class="col-l-6 col-s-6 col-m-hide exper_show">
+                                <h3>天津康之居装饰</h3>
+                                <span>2014年9月~2016年3月</span>
+                                <ul>
+                                    <li>设计部</li><li>负责公司的业务洽谈</li><li>负责公司报价的制作</li><li>负责公司的网站维护</li><li>同期工作之余开始系统性的自学web前端各项技术</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-l-hide col-s-hide col-m-2"><p style="width:36px;padding:20px 30px 0;color: #fff;font-size: 36px">天津康之居装饰</p></div>
+        </div>
+    </div>
+</div>
+<div class="xmjy">
+    <div class="xmjy_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-l-12 col-s-12 col-m-12 zyjn_title"><h3>项目经验</h3></div>
+            <div class="col-l-12 col-s-12 col-m-12 zyjn_border">
+                <div class="zy_border"></div>
+            </div>
+            <div class="col-l-12 xmjy_tu">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-l-12 xmlb"><div class="list" style="">项目列表</div></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-4 col-m-hide col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-4 col-m-hide col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 </body>
+<script>
+    var xx=document.getElementsByClassName(".xx")
+    var mc=document.getElementsByClassName(".mc")
+    var l_j=document.getElementsByClassName(".l_j")
+    for(var i=0;i<xx.length;i++){
+        xx[i].onmousemove=function () {
+            mc[i].style.transition="transform 2s ease";
+            mc[i].style.transform="translateY(-100px)";
+        }
+    }
+</script>
 </html>
