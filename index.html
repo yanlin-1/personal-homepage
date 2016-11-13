@@ -6,32 +6,15 @@
     <link rel="stylesheet" href="css/less.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.backTop.js"></script>
+    <script src="js/jquery.fuxian.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
     <script src="js/index.js"></script>
     <style>
-        .experience{display: block;margin: auto;padding: 50px 49px 30px;background-image: url(16.png);background-size: 100% 100%;background-repeat: no-repeat}
-        .luobotu{padding: 40px 0 0;}
-        .experience h3{color: #fff}
-        .luobo{margin-left: 8.33%;padding:5% 5%;background: #f9f9f9;height: 400px}
-        .luobo img{width: 100%;}
-        .exper_show{padding: 20px}
-        .exper_show h3{font-size: 24px;color: #000;text-indent: 1em;font-weight: 500}
-        .exper_show span{font-size: 12px;color: #000;padding-left: 30px;font-weight: 500}
-        .exper_show ul{padding-left: 30px;color: #E08A06}
-        .exper_show ul li{margin-top: 20px;list-style: disc;}
-        .xmjy{display: block;margin: auto;background-image: url(bg-s.png);background-size: 100% 100%;background-repeat: no-repeat;}
-        .xmjy_bg{width:100%;height:100%;background: rgba(0,0,0,0.6);padding: 50px 49px 30px;}
-        .xmjy_tu{padding: 20px 0 20px}
-        .xmjy_tu div[class*=col-l-4]{height: 285px;border: 1px solid #666;overflow: hidden;position: relative}
-        .xmjy_tu .xmlb{margin-bottom: 20px}
-        .xmjy_tu .xmlb .list{border: 2px solid #fff;width: 120px;height: 50px;line-height:50px;margin: auto;text-align: center;font-size: 24px;color: #fff}
-        .xmjy_tu img{width: 100%;height: 100%;transition: transform 2s ease}
-        .mc{position: absolute;top: -60px;left: 45%;color: #00a2e8;z-index: 20}
-        .l_j{position: absolute;bottom: -60px;left: 45%;border: 1px solid #e6e6e6;padding: 5px;border-radius: 50%;font-size: 36px;z-index: 20}
-        .xmjy_tu img:hover{transform: scale(1.5,1.5);}
     </style>
 </head>
 <body>
-<nav>
+<nav class="aa">
     <div class="nav_l">
         <div class="nav_hide"><b>Resume</b></div>
         <div class="nav_hide">前端工程师</div>
@@ -39,7 +22,7 @@
         <div class="nav_show">Resume</div>
     </div>
     <div class="nav_r">
-        <div class="nav_hide">个人介绍</div>
+        <div class="nav_hide"><a href="">个人介绍</a></div>
         <div class="nav_hide">专业技能</div>
         <div class="nav_hide">工作经验</div>
         <div class="nav_hide">项目经验</div>
@@ -55,23 +38,27 @@
 <div class="con">
     <div class="main_kj"></div>
     <div class="my">
-        <div class="zhaopian"></div>
-        <div class="introduce">
-            <p>您好！我叫 <span>张彦林</span></p>
-            <p><span>个人介绍</span><br><br>
-                热爱前端，追求用更扎实的代码技术做出更好的功能与效果。<br><br>
-                有较强的自学能力，能够通过各种方法解决问题。<br><br>
-                具备规范的代码编写风格、有自己的逻辑思维与思想。</p>
-            <div class="anniu">
-                <div class="anniu_f">Hire Me</div>
-                <div class="anniu_f">Contact Me </div>
-                <div class="anniu_y">
+        <div class="container">
+            <div class="row">
+                <div class="zhaopian  col-s-hide"></div>
+                <div class="introduce col-l-6 col-m-12 col-s-12">
+                    <p>您好！我叫 <span>张彦林</span></p>
+                    <p><span>个人介绍</span><br><br>
+                        热爱前端，追求用更扎实的代码技术做出更好的功能与效果。<br><br>
+                        有较强的自学能力，能够通过各种方法解决问题。<br><br>
+                        具备规范的代码编写风格、有自己的逻辑思维与思想。</p>
+                    <div class="anniu">
+                        <div class="anniu_f">Hire Me</div>
+                        <div class="anniu_f">Contact Me </div>
+                        <div class="anniu_y">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="zyjn">
+<div class="zyjn aa">
     <div class="container">
         <div class="row">
             <div class="col-l-12 zyjn_title"> <h3>专业技能</h3></div>
@@ -81,18 +68,15 @@
             <div class="col-l-12 zyjn_con">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-l-8 col-s-12 zwjn">
-                            <div>熟练使用HTML,CSS+DIV网站重构、优化；掌握HTML5和CSS3的新特性并应用开发。</div>
-                            <div>熟练使用firebug,Chrome调试工作调试代码，并进一步优化。</div>
-                            <div>熟练使用javascript、Ajax、jQuery、zepto等web开发技术，并可以制作页面的基本动画动态效果及简单的动画。</div>
-                            <div>熟练使用百度地图API接口使用。</div>
-                            <div>熟练使用bootstrap快速布局页面。</div>
-                            <div>熟练掌握Axure、Photoshop、Sublime、Hbuilder等软件的使用，提高开发效率。</div>
-                            <div>掌握angularjs、nodejs等。</div>
-                            <div>掌握微信开发、JS-SDK。</div>
-                            <div>掌握APP打包：cordova线下打包和Hbuider线上打包。</div>
-                            <div>了解less、sess等css预处理语言。</div>
-                            <div>了解PHP、PHPCMS、MySQL等。</div>
+                        <div class="col-l-8 col-m-12 col-s-12 zwjn">
+                            <p>熟练使用HTML,CSS+DIV网站重构、优化；掌握HTML5和CSS3的新特性并应用开发。</p>
+                            <p>熟练使用firebug,Chrome调试工作调试代码，并进一步优化。</p>
+                            <p>熟练使用javascript、Ajax、jQuery、zepto等web开发技术，并可以制作页面的基本动画动态效果及简单的动画。</p>
+                            <p>熟练使用bootstrap快速布局页面。</p>
+                            <p>熟练掌握WebStorm、Notepad、Photoshop、Sublime等软件的使用，提高开发效率。</p>
+                            <p>掌握angularjs、nodejs等。</p>
+                            <p>了解less、sess等css预处理语言。</p>
+                            <p>了解PHP、PHPCMS、MySQL等。</p>
                         </div>
                         <div class="col-l-4 col-s-12 my_zy">
                             <img src="11.png.png" alt="图片处理有误">
@@ -104,7 +88,7 @@
         </div>
     </div>
 </div>
-<div class="experience">
+<div class="experience aa">
     <div class="container">
         <div class="row">
             <div class="col-l-12 col-s-12 col-m-12 zyjn_title"><h3>工作经验</h3></div>
@@ -115,23 +99,23 @@
                 <div class="luobo">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-l-6 col-s-6 col-m-12 "><img src="body.jpg" alt="图片处理有误"><!--可以插小图--></div>
-                            <div class="col-l-6 col-s-6 col-m-hide exper_show">
-                                <h3>天津康之居装饰</h3>
-                                <span>2014年9月~2016年3月</span>
+                            <div class="col-l-6 col-s-12 col-m-12 exper_img"><img src="body.jpg" alt="图片处理有误"><!--可以插小图--></div>
+                            <div class="col-l-6 col-s-12 col-m-hide exper_show">
+                                <h3>山西网格科技公司</h3>
+                                <span>2015年6月~2016年11月</span>
                                 <ul>
-                                    <li>设计部</li><li>负责公司的业务洽谈</li><li>负责公司报价的制作</li><li>负责公司的网站维护</li><li>同期工作之余开始系统性的自学web前端各项技术</li>
+                                    <li>网络运营部</li><li>负责前端开发</li><li>负责公司的网站维护</li><li>负责部分项目的php后台处理</li><li>同期工作之余开始系统性的自学web前端各项技术</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-l-hide col-s-hide col-m-2"><p style="width:36px;padding:20px 30px 0;color: #fff;font-size: 36px">天津康之居装饰</p></div>
+            <div class="col-l-hide col-s-hide col-m-2"><p style="width:36px;padding:20px 30px 0;color: #fff;font-size: 36px">山西网格科技公司</p></div>
         </div>
     </div>
 </div>
-<div class="xmjy">
+<div class="xmjy aa">
     <div class="xmjy_bg">
     <div class="container">
         <div class="row">
@@ -139,16 +123,16 @@
             <div class="col-l-12 col-s-12 col-m-12 zyjn_border">
                 <div class="zy_border"></div>
             </div>
-            <div class="col-l-12 xmjy_tu">
+            <div class="col-l-12 col-s-12 col-m-12 xmjy_tu">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-l-12 xmlb"><div class="list" style="">项目列表</div></div>
-                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
-                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
-                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
-                        <div class="col-l-4 col-m-6 col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
-                        <div class="col-l-4 col-m-hide col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
-                        <div class="col-l-4 col-m-hide col-s-12 xx"><span class="mc">广州建筑</span><img src="portfolio1.jpg" alt=""><div class="l_j">&</div></div>
+                        <div class="col-l-12 col-m-12 col-s-12 xmlb"><div class="list" style="">项目列表</div></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><a href="http://yanlinzp1.duapp.com"><span class="mc">广州建筑</span></a><img src="gzjz-index.png" alt=""></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><a href="http://yanlinzp1.duapp.com"><span class="mc">广州建筑</span></a><img src="gzjz-show01.png" alt=""></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><a href="http://yanlinzp1.duapp.com"><span class="mc">千禧酒店</span></a><img src="qx_index.png" alt=""></div>
+                        <div class="col-l-4 col-m-6 col-s-12 xx"><a href="http://yanlinzp1.duapp.com"><span class="mc">千禧建筑</span></a><img src="qxjd-catgory02.png" alt=""></div>
+                        <div class="col-l-4 col-m-hide col-s-12 xx"><a href="http://yanlin.duapp.com"><span class="mc">车网互联</span></a><img src="portfolio7.png" alt=""></div>
+                        <div class="col-l-4 col-m-hide col-s-12 xx"><a href="http://yanlin.duapp.com"><span class="mc">车网互联</span></a><img src="portfolio9.jpg" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -158,14 +142,13 @@
 </div>
 </body>
 <script>
-    var xx=document.getElementsByClassName(".xx")
-    var mc=document.getElementsByClassName(".mc")
-    var l_j=document.getElementsByClassName(".l_j")
-    for(var i=0;i<xx.length;i++){
-        xx[i].onmousemove=function () {
-            mc[i].style.transition="transform 2s ease";
-            mc[i].style.transform="translateY(-100px)";
-        }
-    }
+    $(".xx").hover(function () {
+        var aa=$(this).index()-1
+        $(".mc").css("top","-60px").eq(aa).animate({top:80},1000)
+        $(".l_j").css("bottom","-60px").eq(aa).animate({top:80},1000)
+    },function () {
+        $(".mc").css("top","-60px")
+        $(".l_j").css("bottom","-60px")
+    })
 </script>
 </html>
