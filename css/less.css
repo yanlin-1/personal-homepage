@@ -3,7 +3,7 @@
 }
 /*小屏的时候*/
 .container {
-  width: 768px;
+  width: 600px;
   margin: auto;
 }
 .container > .row {
@@ -135,7 +135,7 @@
 /*中屏*/
 @media screen and (min-width: 800px) {
   .container {
-    width: 992px;
+    width: 800px;
     margin: auto;
   }
   .introduce{height: 100%;padding: 20px;position: absolute;top:0;left:40%;z-index: 10}
